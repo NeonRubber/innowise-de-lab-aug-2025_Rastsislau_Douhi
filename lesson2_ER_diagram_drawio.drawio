@@ -1,0 +1,80 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="48W_3Iz7msA5RKCDSuTd">
+    <mxGraphModel dx="1678" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="200" pageHeight="150" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XvSHNM1xfPugDFXstRAg-41" value="&lt;span&gt;Users&lt;/span&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;swimlaneFillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="70" y="340" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-42" value="&lt;div&gt;&lt;b&gt;&lt;i&gt;(PK)&amp;nbsp;&lt;/i&gt;user_id : SERIAL&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;i&gt;user_email&lt;/i&gt;&amp;nbsp;: VARCHAR(100) NOT NULL UNIQUE&lt;br&gt;&lt;i&gt;user_name&lt;/i&gt;&amp;nbsp;: VARCHAR(30) NOT NULL UNIQUE&lt;/div&gt;&lt;div&gt;&lt;i&gt;user_password&amp;nbsp;&lt;/i&gt;: TEXT NOT NULL&lt;br&gt;&lt;i&gt;created_at&amp;nbsp;&lt;/i&gt;: TIMESTAMP DEFAULT NOW()&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="XvSHNM1xfPugDFXstRAg-41">
+          <mxGeometry y="30" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-43" value="&lt;font style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;Artists&lt;/font&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;swimlaneFillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="85" y="580" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-44" value="&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;i&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(PK)&lt;/font&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;&lt;b&gt;&lt;i style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;artist_id&amp;nbsp;&lt;/i&gt;:&amp;nbsp;&lt;font style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;SERIAL&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;&lt;i&gt;artist_name&lt;/i&gt;&amp;nbsp;: VARCHAR(100) NOT NULL&lt;br&gt;&lt;i&gt;artist_country &lt;/i&gt;:&amp;nbsp;VARCHAR(50)&lt;br&gt;&lt;i&gt;debut_year&lt;/i&gt;&amp;nbsp;: INT CHECK (debut_year &amp;gt;= 0)&lt;/font&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="XvSHNM1xfPugDFXstRAg-43">
+          <mxGeometry y="30" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-45" value="&lt;font&gt;Albums&lt;/font&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;swimlaneFillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="500" y="580" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-46" value="&lt;div&gt;&lt;b&gt;&lt;i&gt;(PK)&amp;nbsp;&lt;/i&gt;&lt;i&gt;album_id&lt;/i&gt;&amp;nbsp;: SERIAL&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;i&gt;&lt;b&gt;FK)&amp;nbsp;&lt;/b&gt;&lt;/i&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&lt;i&gt;artist_id&lt;/i&gt; :&amp;nbsp;INTEGER NOT NULL&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;album_title&lt;/i&gt;&amp;nbsp;: VARCHAR(100) NOT NULL&lt;/div&gt;&lt;div&gt;&lt;i&gt;album_release_date&lt;/i&gt;&amp;nbsp;: DATE&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="XvSHNM1xfPugDFXstRAg-45">
+          <mxGeometry y="30" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-54" value="Playlists" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;swimlaneFillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="470" y="340" width="290" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-55" value="&lt;div&gt;&lt;i&gt;&lt;b&gt;(PK)&amp;nbsp;playlist_id&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&amp;nbsp;: SERIAL&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;(FK)&amp;nbsp;user_id&lt;/i&gt;&amp;nbsp;: INT&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;playlist_name &lt;/i&gt;: VARCHAR(100) NOT NULL&lt;/div&gt;&lt;div&gt;&lt;i&gt;playlist_created_at &lt;/i&gt;: TIMESTAMP DEFAULT NOW()&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="XvSHNM1xfPugDFXstRAg-54">
+          <mxGeometry y="30" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-56" value="&lt;span style=&quot;text-align: left;&quot;&gt;Tracks&lt;/span&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;swimlaneFillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="862.5" y="580" width="267.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-57" value="&lt;div&gt;&lt;i&gt;&lt;b&gt;(PK)&amp;nbsp;track_id&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&amp;nbsp;: SERIAL&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;(FK)&amp;nbsp;album_id&lt;/i&gt;&amp;nbsp;: NOT NULL&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;track_title&lt;/i&gt;&amp;nbsp;: VARCHAR(100) NOT NULL&lt;/div&gt;&lt;div&gt;&lt;i&gt;track_duration_seconds&lt;/i&gt;&amp;nbsp;: INT NOT NULL CHECK (duration_seconds &amp;gt; 0)&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="XvSHNM1xfPugDFXstRAg-56">
+          <mxGeometry y="30" width="267.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-58" value="&lt;span style=&quot;text-align: left;&quot;&gt;Playlist_tracks&lt;/span&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;swimlaneFillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="831.25" y="340" width="330" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-59" value="&lt;div&gt;&lt;b&gt;&lt;i&gt;(PK)&lt;/i&gt;&amp;nbsp;PRIMARY KEY : (playlist_id, track_id) UNIQUE&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;(FK)&lt;/i&gt;&amp;nbsp;&lt;i&gt;playlist_id &lt;/i&gt;: INT NOT NULL&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;(FK)&lt;/i&gt;&amp;nbsp;&lt;i&gt;track_id &lt;/i&gt;: INT NOT NULL&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;track_position&lt;/i&gt;&amp;nbsp;: INT NOT NULL UNIQUE CHECK (track_position &amp;gt; 0)&lt;/div&gt;&lt;div&gt;added_at TIMESTAMP DEAFAULT NOW()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;i&gt;//a many-to-many junction table&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;i&gt;//composite primary keys prevent same track from appearing twice on one playlist&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="XvSHNM1xfPugDFXstRAg-58">
+          <mxGeometry y="30" width="330" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-63" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="XvSHNM1xfPugDFXstRAg-55">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="350" y="410" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-64" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="760" y="400" as="sourcePoint" />
+            <mxPoint x="831" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-65" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;exitX=1.001;exitY=0.206;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1131.2475" y="639.6" as="sourcePoint" />
+            <mxPoint x="831.98" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="990.98" y="489" />
+              <mxPoint x="990.98" y="579" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-67" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;entryX=-0.002;entryY=0.328;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="XvSHNM1xfPugDFXstRAg-46">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="335" y="640" as="sourcePoint" />
+            <mxPoint x="435" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XvSHNM1xfPugDFXstRAg-68" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;entryX=0.002;entryY=0.298;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="XvSHNM1xfPugDFXstRAg-57">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="730" y="640" as="sourcePoint" />
+            <mxPoint x="860" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
