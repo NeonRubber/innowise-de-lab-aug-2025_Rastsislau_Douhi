@@ -1,0 +1,1 @@
+Music streaming service (сервис потоковой передачи музыки) has been chosen as scenario for this homework
