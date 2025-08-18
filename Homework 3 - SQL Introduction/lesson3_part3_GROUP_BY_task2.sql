@@ -1,7 +1,7 @@
 SELECT
 	item,
 	COUNT(order_id),
-	AVG(amount)
+	ROUND(AVG(amount), 2)
 FROM orders
 GROUP BY (item);
 
