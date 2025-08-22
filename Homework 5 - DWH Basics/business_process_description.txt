@@ -1,0 +1,28 @@
+MUSIC STREAMING SERVICE / СЕРВИС ПОТОКОВОГО ВОСПРОИЗВЕДЕНИЯ МУЗЫКИ
+
+BUSINESS-PROCESS - Track playback analysis / БИЗНЕС-ПРОЦЕСС - Анализ воспроизведения треков
+
+GRAIN LEVEL - One instance of track playback / УРОВЕНЬ ДЕТАЛИЗАЦИИ - Одно событие воспроизведения трека
+
+
+Business-process includes collecting information about how, by whom and at when a certain track/composition was played.
+
+The mentioned info helps to properly improve the recommendation algorithms by collecting such information as:
+-information on the number of playbacks (can provide direct information about the popularity of a said track globally and among certain categories of users);
+-seasonality of trends depending on the time of year (for the formation, for example, of New Year/Christmas playlists);
+-an idea of what Premium subscription users listen to;
+-music of which artists/genres people listen to to the end and which ones they skip;
+
+This and other information provide crucial info for business decisions for development of music streaming servicse, in particular - its recommendation algorithms, which retain user and sell them a paid version of the subscription.
+
+/
+
+Бизнес-процесс включает в себя сбор информации о том, как, кем и в какое время определённый трек/композиция был воспроизведён.
+
+Упомянутая информация помогает должным образом совершенствовать алгоритмы рекомендаций путём сбора, например, такой информации как:
+-информация о количестве воспроизведений (даёт прямую информацию о популярности того или иного трека как глобально так и среди определённых категорий пользователей);
+-сезонность трендов и их зависимость от времени года (для формирования, к примеру, новогодних/рождественских плейлистов);
+-представление о том, что слушают пользователи Premium-подписки;
+-музыку каких исполнителей/жанров дослушивают, а каких - "скипают";
+
+Подобная и многая другая информация даёт почву для принятия бизнес-решений в области развития сервиса, в частности -  его алгоритмов рекомендаций, что позволит удержать пользователя и реализовать платную версию подписки.
